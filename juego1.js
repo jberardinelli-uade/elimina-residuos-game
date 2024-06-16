@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const elementType = elementTypes[randomIndex];
 
             const item = document.createElement('img');
-            item.src = `../assets/img/juego1/${elementType}`; 
+            item.src = `./assets/img/juego1/${elementType}`; 
             item.classList.add('item');
             const position = createRandomPosition();
             item.style.left = `${position.x}px`;
