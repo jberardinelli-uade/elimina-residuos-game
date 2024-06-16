@@ -1,0 +1,212 @@
+/* styles/juego1.css */
+
+.game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    z-index: 2;
+}
+.game-overlay h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(to right, #70DC9C, #41855D);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#start-button:hover {
+    background-color: #dddddd;
+}
+
+
+.game-container {
+    position: relative;
+    width: 1000px; 
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.game-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+#game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#info {
+    position: relative;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+}
+
+#timer {
+    color: red;
+    font-weight: bold;
+}
+
+.item {
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+    transition: width 0.1s, height 0.1s;
+}
+
+#message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #cbcbcb, #ffffff);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 2;
+    font-family: "Inter", sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+#reset-button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#reset-button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+#reset-button.lose {
+    background-color: #ff6961;
+}
+
+#reset-button.win {
+    background-color: #41855D;
+}
+
+@media (max-width: 768px) {
+    .game-overlay h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    #start-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        border-radius: 20px;
+    }
+
+    .game-container {
+        height: 100vh;
+    }
+
+    #info {
+        left: 0.5rem;
+        top: 0.5rem;
+    }
+
+    #timer {
+        font-size: 1rem;
+    }
+
+    .item {
+        width: 30px;
+    }
+
+    #message {
+        padding: 10px;
+    }
+
+    #reset-button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    #background-video {
+        display: none; /* Ocultar video en pantallas móviles */
+    }
+
+    .game-container {
+        background-image: url('../assets/img/juego1/phone-wallpaper.png'); /* Añadir una imagen de fondo para dispositivos móviles */
+        background-size: cover;
+        background-position: center;
+        width: 300px; 
+        height: 500px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .game-overlay h2 {
+        font-size: 1.25rem;
+    }
+
+    #start-button {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    #info {
+        font-size: 0.875rem;
+    }
+
+    #timer {
+        font-size: 0.875rem;
+    }
+
+    .item {
+        width: 25px;
+    }
+}

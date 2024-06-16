@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/logotipo.png" />
+    <title>JUEGO - ELIMINA LOS RESIDUOS</title>
+
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/navmenu.css">
+    <link rel="stylesheet" href="../styles/juego1.css">
+</head>
+<body>
+    <header>
+        <h1>Elimina Los residuos <br> by Julian Berardinelli</h1>
+    </header>
+    <main>
+        <div class="game-container last-section" id="game-container">
+            <video autoplay loop muted id="background-video">
+                <source src="./assets/img/juego1/video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <div class="game-overlay" id="game-overlay">
+                <h2>Elimina los residuos rapidamente! Tienes 30 segundos!</h2>
+                <button id="start-button">Start</button>
+            </div>
+            <div class="game-content" id="game-content">
+            </div>
+            <div id="game">
+                <!-- EL JUEGO SE RENDERIZA ACA. -->
+                <div id="info">
+                    <span id="timer">Tiempo: 30s</span>
+                </div>
+            </div>
+        </div>
+        <div id="message" class="hidden"></div>
+    </main>
+    <footer>
+        <div>
+            <p>By JULIAN BERARDINELLI</p>
+            <a target="_blank" href="ww.julianberardinelli.com"><p>www.julianberardinelli.com</p></a>
+        </div>
+    </footer>
+    <script src="./juego1.js"></script>
+</body>
+</html>

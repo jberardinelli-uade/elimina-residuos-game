@@ -1,0 +1,129 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: #41855D;
+    font-size: 20px;
+}
+h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: #41855D;
+    font-size: 25px;
+}
+h5 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+
+    color: #161616bc;
+}
+
+h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+body {
+    /* display: flex;
+    flex-direction: column;
+    height: 100vh; */
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+/* NAV PARA PC */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+}
+
+header h1 {
+    font-size: 30px;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .computer-nav {
+        display: none;
+    }
+}
+
+main {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+/* MENU JUEGOS */
+.juegos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 25px;
+}
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.juego:hover {
+    transform: translateY(-5px);
+}
+
+.juego img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.juego h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+    margin-bottom: 20px;
+}
+footer p{
+    color: white;
+}
